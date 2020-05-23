@@ -4,12 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
     tools:context=".MainActivity">
+
+
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
         <TextView
@@ -17,13 +22,14 @@
             android:layout_height="wrap_content"
             android:text="글씨 색 변경"
             android:textColor="#000000"
-            android:background="@color/colorAccent"/>
+            android:background="#62DAC5"/>
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
             android:text="글씨 크기 변경"
+            android:gravity="center"
             android:textSize="20sp"/>
 
         <TextView
@@ -34,30 +40,42 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:src="@drawable/tje_logo01"
-        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
 
+        <ImageView
 
-    <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tje_logo01"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+      <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="아이디"/>
 
     <EditText
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="이메일 양식으로 입력"
         android:inputType="textEmailAddress"/>
 
     <TextView
+        android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="비밀번호"/>
 
     <EditText
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="숫자 6자리로 비밀번호 입력"
@@ -72,6 +90,7 @@
         android:checked="true"/>
 
     <RadioGroup
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -94,9 +113,10 @@
     </RadioGroup>
 
     <Button
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="로그인"
-        android:background="@color/colorAccent"/>
+        android:background="#62DAC5"/>
 
 </LinearLayout>
